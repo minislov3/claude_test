@@ -3,6 +3,7 @@ import { Layout } from './components/Layout'
 import { Dashboard } from './pages/Dashboard'
 import { Artifacts } from './pages/modules/Artifacts'
 import { ComingSoon } from './pages/modules/ComingSoon'
+import { Files } from './pages/modules/Files'
 import { Prompting } from './pages/modules/Prompting'
 
 function NotFound() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/tutorial/prompting" element={<Prompting />} />
         <Route path="/tutorial/artifacts" element={<Artifacts />} />
+        <Route path="/tutorial/files" element={<Files />} />
         <Route path="/tutorial/:moduleId" element={<ComingSoon />} />
         <Route path="*" element={<NotFound />} />
       </Route>
