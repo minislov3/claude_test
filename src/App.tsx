@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { Dashboard } from './pages/Dashboard'
+import { Artifacts } from './pages/modules/Artifacts'
 import { ComingSoon } from './pages/modules/ComingSoon'
 import { Prompting } from './pages/modules/Prompting'
 
@@ -21,6 +22,7 @@ function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<Dashboard />} />
         <Route path="/tutorial/prompting" element={<Prompting />} />
+        <Route path="/tutorial/artifacts" element={<Artifacts />} />
         <Route path="/tutorial/:moduleId" element={<ComingSoon />} />
         <Route path="*" element={<NotFound />} />
       </Route>
