@@ -49,7 +49,7 @@ export function ModuleFrame({ moduleId, children }: ModuleFrameProps) {
         </label>
       </div>
 
-      {next && (
+      {next ? (
         <div className="mt-6">
           <p className="mb-2 text-xs font-medium tracking-wide text-ink-soft uppercase">
             다음엔 이런 것도 해보세요
@@ -68,6 +68,15 @@ export function ModuleFrame({ moduleId, children }: ModuleFrameProps) {
               →
             </span>
           </Link>
+        </div>
+      ) : (
+        <div className="mt-6 rounded-2xl border border-accent/30 bg-accent-soft/30 p-5 text-center">
+          <p className="mb-1 font-serif text-lg font-semibold text-ink">
+            🎉 여기까지가 마지막 코스예요
+          </p>
+          <p className="text-sm text-ink-soft">
+            준비된 코스를 모두 둘러봤어요. 언제든 대시보드에서 다시 골라볼 수 있어요.
+          </p>
         </div>
       )}
 

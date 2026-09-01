@@ -4,6 +4,7 @@ import { Dashboard } from './pages/Dashboard'
 import { Artifacts } from './pages/modules/Artifacts'
 import { ClaudeCode } from './pages/modules/ClaudeCode'
 import { ComingSoon } from './pages/modules/ComingSoon'
+import { Cowork } from './pages/modules/Cowork'
 import { Files } from './pages/modules/Files'
 import { McpConnectors } from './pages/modules/McpConnectors'
 import { Memory } from './pages/modules/Memory'
@@ -41,6 +42,7 @@ function App() {
         <Route path="/tutorial/claude-code" element={<ClaudeCode />} />
         <Route path="/tutorial/mcp-connectors" element={<McpConnectors />} />
         <Route path="/tutorial/platforms" element={<Platforms />} />
+        <Route path="/tutorial/cowork" element={<Cowork />} />
         <Route path="/tutorial/:moduleId" element={<ComingSoon />} />
         <Route path="*" element={<NotFound />} />
       </Route>
