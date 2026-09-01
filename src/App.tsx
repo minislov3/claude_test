@@ -5,6 +5,7 @@ import { Artifacts } from './pages/modules/Artifacts'
 import { ClaudeCode } from './pages/modules/ClaudeCode'
 import { ComingSoon } from './pages/modules/ComingSoon'
 import { Files } from './pages/modules/Files'
+import { McpConnectors } from './pages/modules/McpConnectors'
 import { Memory } from './pages/modules/Memory'
 import { Projects } from './pages/modules/Projects'
 import { Prompting } from './pages/modules/Prompting'
@@ -37,6 +38,7 @@ function App() {
         <Route path="/tutorial/memory" element={<Memory />} />
         <Route path="/tutorial/styles" element={<Styles />} />
         <Route path="/tutorial/claude-code" element={<ClaudeCode />} />
+        <Route path="/tutorial/mcp-connectors" element={<McpConnectors />} />
         <Route path="/tutorial/:moduleId" element={<ComingSoon />} />
         <Route path="*" element={<NotFound />} />
       </Route>
