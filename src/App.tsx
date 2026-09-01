@@ -4,6 +4,7 @@ import { Dashboard } from './pages/Dashboard'
 import { Artifacts } from './pages/modules/Artifacts'
 import { ComingSoon } from './pages/modules/ComingSoon'
 import { Files } from './pages/modules/Files'
+import { Memory } from './pages/modules/Memory'
 import { Projects } from './pages/modules/Projects'
 import { Prompting } from './pages/modules/Prompting'
 import { SearchModes } from './pages/modules/SearchModes'
@@ -31,6 +32,7 @@ function App() {
         <Route path="/tutorial/vision" element={<Vision />} />
         <Route path="/tutorial/search-modes" element={<SearchModes />} />
         <Route path="/tutorial/projects" element={<Projects />} />
+        <Route path="/tutorial/memory" element={<Memory />} />
         <Route path="/tutorial/:moduleId" element={<ComingSoon />} />
         <Route path="*" element={<NotFound />} />
       </Route>
