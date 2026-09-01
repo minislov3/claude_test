@@ -5,6 +5,7 @@ import { Artifacts } from './pages/modules/Artifacts'
 import { ComingSoon } from './pages/modules/ComingSoon'
 import { Files } from './pages/modules/Files'
 import { Prompting } from './pages/modules/Prompting'
+import { Vision } from './pages/modules/Vision'
 
 function NotFound() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/tutorial/prompting" element={<Prompting />} />
         <Route path="/tutorial/artifacts" element={<Artifacts />} />
         <Route path="/tutorial/files" element={<Files />} />
+        <Route path="/tutorial/vision" element={<Vision />} />
         <Route path="/tutorial/:moduleId" element={<ComingSoon />} />
         <Route path="*" element={<NotFound />} />
       </Route>
