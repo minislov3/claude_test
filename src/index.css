@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-serif:
+    ui-serif, Georgia, 'Apple SD Gothic Neo', 'AppleMyungjo', Batang,
+    'Nanum Myeongjo', serif;
+  --font-sans:
+    -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui,
+    sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Consolas, monospace;
+
+  --color-paper: #f6f1e7;
+  --color-surface: #ffffff;
+  --color-surface-2: #fbf7ee;
+  --color-ink: #241f1a;
+  --color-ink-soft: #6b6255;
+  --color-border: #e3d9c6;
+  --color-accent: #d9552c;
+  --color-accent-soft: #f5dcc9;
+  --color-accent-2: #2f6f62;
+  --color-accent-2-soft: #dcece7;
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-paper: #16130f;
+    --color-surface: #201b15;
+    --color-surface-2: #262019;
+    --color-ink: #f3ede0;
+    --color-ink-soft: #b3a890;
+    --color-border: #3a3226;
+    --color-accent: #ff8a5c;
+    --color-accent-soft: #402a1e;
+    --color-accent-2: #64bfa9;
+    --color-accent-2-soft: #1c3733;
+  }
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-ink);
+}
+
+kbd {
+  font-family: var(--font-mono);
+}
