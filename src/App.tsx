@@ -7,6 +7,7 @@ import { ComingSoon } from './pages/modules/ComingSoon'
 import { Files } from './pages/modules/Files'
 import { McpConnectors } from './pages/modules/McpConnectors'
 import { Memory } from './pages/modules/Memory'
+import { Platforms } from './pages/modules/Platforms'
 import { Projects } from './pages/modules/Projects'
 import { Prompting } from './pages/modules/Prompting'
 import { SearchModes } from './pages/modules/SearchModes'
@@ -39,6 +40,7 @@ function App() {
         <Route path="/tutorial/styles" element={<Styles />} />
         <Route path="/tutorial/claude-code" element={<ClaudeCode />} />
         <Route path="/tutorial/mcp-connectors" element={<McpConnectors />} />
+        <Route path="/tutorial/platforms" element={<Platforms />} />
         <Route path="/tutorial/:moduleId" element={<ComingSoon />} />
         <Route path="*" element={<NotFound />} />
       </Route>
