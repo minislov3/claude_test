@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { Dashboard } from './pages/Dashboard'
 import { Artifacts } from './pages/modules/Artifacts'
+import { ClaudeCode } from './pages/modules/ClaudeCode'
 import { ComingSoon } from './pages/modules/ComingSoon'
 import { Files } from './pages/modules/Files'
 import { Memory } from './pages/modules/Memory'
@@ -35,6 +36,7 @@ function App() {
         <Route path="/tutorial/projects" element={<Projects />} />
         <Route path="/tutorial/memory" element={<Memory />} />
         <Route path="/tutorial/styles" element={<Styles />} />
+        <Route path="/tutorial/claude-code" element={<ClaudeCode />} />
         <Route path="/tutorial/:moduleId" element={<ComingSoon />} />
         <Route path="*" element={<NotFound />} />
       </Route>
