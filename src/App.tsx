@@ -8,6 +8,7 @@ import { Memory } from './pages/modules/Memory'
 import { Projects } from './pages/modules/Projects'
 import { Prompting } from './pages/modules/Prompting'
 import { SearchModes } from './pages/modules/SearchModes'
+import { Styles } from './pages/modules/Styles'
 import { Vision } from './pages/modules/Vision'
 
 function NotFound() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/tutorial/search-modes" element={<SearchModes />} />
         <Route path="/tutorial/projects" element={<Projects />} />
         <Route path="/tutorial/memory" element={<Memory />} />
+        <Route path="/tutorial/styles" element={<Styles />} />
         <Route path="/tutorial/:moduleId" element={<ComingSoon />} />
         <Route path="*" element={<NotFound />} />
       </Route>
